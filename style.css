@@ -1,0 +1,85 @@
+:root {
+  --background-colour: lightgoldenrodyellow;
+  --calendar-month-colour: teal;
+  --font-colour: teal;
+  --font-family: ubuntu;
+}
+body {
+  background-color: var(--background-colour);
+  font-family: var(--font-family);
+}
+ul {
+  list-style-type: none;
+}
+
+.size-of-calendar {
+  max-width: 20rem;
+}
+
+/* Month header */
+.month {
+  padding: 25px 20px;
+  width: 100%;
+  background-color: var(--calendar-month-colour);
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 10px 0px 25px;
+  background: #eee;
+  margin: 0;
+}
+
+.days > li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+.day-hover:hover {
+  background-color: var(--calendar-month-colour);
+  border-radius: 2px 2px 2px 2px;
+  color: white;
+
+}
+
+.water {left: 300px;
+  position: relative;
+  width: 70px;
+  background-color: blue;
+  transform: translateY(-100%);
+  top: 300px;
+}
+#kool{
+  height: 300px;
+}
